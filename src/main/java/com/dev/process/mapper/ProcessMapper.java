@@ -22,7 +22,7 @@ public class ProcessMapper {
             process.setDescription(processInterface.getDescription());
             process.setType(processInterface.getType());
             process.setStatus(processInterface.getStatus());
-            process.setPlatform(process.getPlatform());
+            process.setPlatform(processInterface.getPlatform());
 
             processServiceInt.save(process);
         }

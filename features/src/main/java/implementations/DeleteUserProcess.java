@@ -1,4 +1,4 @@
-package com.dev.process.implementations;
+package implementations;
 
 import com.dev.process.enums.Platform;
 import com.dev.process.enums.Status;

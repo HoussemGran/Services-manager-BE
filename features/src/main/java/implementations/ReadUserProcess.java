@@ -1,4 +1,4 @@
-package com.dev.process.implementations;
+package implementations;
 
 import com.dev.process.enums.Platform;
 import com.dev.process.enums.Status;
@@ -7,20 +7,20 @@ import com.dev.process.interfaces.ProcessInterface;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UpdateUserProcess implements ProcessInterface {
+public class ReadUserProcess implements ProcessInterface {
     @Override
     public String getName() {
-        return "UPDATE_USER";
+        return "READ_USER";
     }
 
     @Override
     public String getDescription() {
-        return "Update a user";
+        return "Read a user";
     }
 
     @Override
     public String getType() {
-        return Type.UPDATE.name();
+        return Type.READ.name();
     }
 
     @Override
@@ -30,6 +30,6 @@ public class UpdateUserProcess implements ProcessInterface {
 
     @Override
     public String getPlatform() {
-        return Platform.TV.name();
+        return Platform.WEB.name();
     }
 }

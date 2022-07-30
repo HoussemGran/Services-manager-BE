@@ -1,4 +1,4 @@
-package com.dev.process.implementations;
+package implementations;
 
 import com.dev.process.enums.Platform;
 import com.dev.process.enums.Status;
@@ -7,25 +7,25 @@ import com.dev.process.interfaces.ProcessInterface;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ReadUserProcess implements ProcessInterface {
+public class CreateUserProcess implements ProcessInterface {
     @Override
     public String getName() {
-        return "READ_USER";
+        return "CREATE_USER";
     }
 
     @Override
     public String getDescription() {
-        return "Read a user";
+        return "Create a user";
     }
 
     @Override
     public String getType() {
-        return Type.READ.name();
+        return Type.CREATE.name();
     }
 
     @Override
     public String getStatus() {
-        return Status.INACTIVE.name();
+        return Status.ACTIVE.name();
     }
 
     @Override

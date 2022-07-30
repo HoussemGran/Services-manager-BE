@@ -1,7 +1,6 @@
 package com.dev.process.entity;
 
 
-import com.dev.process.enums.Type;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
